@@ -24,6 +24,8 @@
         <form:label path="password">Password:</form:label>
         <form:password path="password"/>
 
+        <form:checkbox path="role"/>Admin
+
     </fieldset>
 
     <footer>

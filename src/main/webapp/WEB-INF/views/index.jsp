@@ -13,8 +13,10 @@
     <title>Title</title>
 </head>
 <body>
-<p> Hello:${user.name}</p>
-<p>Passwore${user.password}</p>
+<p> Hello: ${user.name}</p>
+<p>Password: ${user.password}</p>
+<p> Admin: ${user.role}</p>
+
 
 
 <%--<form class="box login">--%>
