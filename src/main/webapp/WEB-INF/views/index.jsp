@@ -12,5 +12,6 @@
 </head>
 <body>
 <p>${someAttribute}</p>
+<p>${today}</p>
 </body>
 </html>
