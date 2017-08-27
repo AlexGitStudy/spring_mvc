@@ -24,6 +24,12 @@
             <bean class="com.github.AlexGitStudy.spring.mvc.interceptor.CheckUserInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/*"/>
+            <bean class="com.github.AlexGitStudy.spring.mvc.interceptor.TimeInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
     <bean class="com.github.AlexGitStudy.spring.mvc.postprocessor.MyBeanPostProcessors"/>
 
