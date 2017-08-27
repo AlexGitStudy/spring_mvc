@@ -13,13 +13,13 @@ public class LoginController {
     private static final Logger logger = Logger.getLogger(LoginController.class);
 
     @GetMapping(value = "/")
-    public ModelAndView index(){
-        return new ModelAndView("login","user", new User());
+    public ModelAndView index() {
+        return new ModelAndView("login", "user", new User());
     }
 
 
     @PostMapping(value = "/check-user")
-    public ModelAndView checkUser(@ModelAttribute ("user") User user){
+    public ModelAndView checkUser(@ModelAttribute("user") User user) {
 
         // Второй вариант наполняем ModelAndViev через геттеры и сеттеры
 //        ModelAndView modelAndView = new ModelAndView();
@@ -27,6 +27,13 @@ public class LoginController {
 //        modelAndView.addObject("user",user);
 
         return new ModelAndView("index", "user", user);
+
+    }
+
+    @GetMapping(value = "/failed")
+    public ModelAndView failed() {
+
+        return new ModelAndView("login-failed", "massage", "Login failed");
 
     }
 
