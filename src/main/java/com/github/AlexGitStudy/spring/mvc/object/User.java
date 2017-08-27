@@ -1,7 +1,11 @@
 package com.github.AlexGitStudy.spring.mvc.object;
 
+import javax.validation.constraints.Size;
+
 public class User {
+    @Size(min=6,message = "минмтально 6 знаков")
     private String name;
+    @Size(min=3, max =10,  message = "минмтально 6 знаков")
     private String password;
     private boolean role;
 

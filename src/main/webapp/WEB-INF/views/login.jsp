@@ -20,15 +20,18 @@
     <fieldset class="boxBody">
         <form:label path="name">Name:</form:label>
         <form:input path="name"/>
+        <form:errors path="name" cssClass="error"/>
 
         <form:label path="password">Password:</form:label>
         <form:password path="password"/>
+        <form:errors path="password" cssClass="error"/>
 
-        <form:checkbox path="role"/>Admin
+        <%--<form:checkbox path="role"/>Admin--%>
 
     </fieldset>
 
     <footer>
+        <form:checkbox path="role"/>Admin
         <label><input type="checkbox" tabindex="3">Keep me loggin in</label>
         <input type="submit" class="btnLogin" value="Login" tabindex="4">
     </footer>
